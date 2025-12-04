@@ -1,6 +1,6 @@
 mod days;
 
-use days::{day01, day02};
+use days::{day01, day02, day03};
 use std::env;
 
 fn main() {
@@ -35,6 +35,7 @@ fn get_solver_function(day: u8) -> fn() -> (u64, u64) {
     match day {
         1 => day01::solve,
         2 => day02::solve,
+        3 => day03::solve,
         _ => unimplemented!(),
     }
 }

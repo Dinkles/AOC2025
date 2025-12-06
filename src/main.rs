@@ -1,6 +1,6 @@
 mod days;
 
-use days::{day01, day02, day03, day04};
+use days::{day01, day02, day03, day04, day05};
 use std::env;
 
 fn main() {
@@ -16,7 +16,7 @@ fn main() {
         .iter()
         .map(|x| {
             x.parse()
-                .unwrap_or_else(|v| panic!("Not a valid day: {}\n Valid days: 1-25", v))
+                .unwrap_or_else(|v| panic!("Not a valid day: {}\n Valid days: 1-12", v))
         })
         .collect();
 
@@ -37,6 +37,7 @@ fn get_solver_function(day: u8) -> fn() -> (u64, u64) {
         2 => day02::solve,
         3 => day03::solve,
         4 => day04::solve,
+        5 => day05::solve,
         _ => unimplemented!(),
     }
 }

@@ -4,4 +4,5 @@ These are my personal solutions for AOC 2025 written in rust. I am using this ye
 
 ## Running Each Day
 - Add the input.txt to the respective day folder in the input folder
-- Run `cargo run --release 'day(s)'` where 'day(s)' is the day(s) you want to run (e.g., `cargo run --release 1 2 3`)
+- Run `cargo run --release 'day(s)'` where 'day(s)' is the day(s) you want to run
+- e.g., `cargo run --release 1 2 4`
